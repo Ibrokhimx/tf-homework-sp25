@@ -54,3 +54,14 @@ variable "region" {
     default = "us-east-1"
   
 }
+variable "instance_type" {
+  description = "The type of instance to start"
+  type        = string
+  default     = "t2.micro"
+}
+
+variable "instance_name" {
+    description = "Name of the EC2"
+    type = string
+    default = "MyNewEC2"
+}
